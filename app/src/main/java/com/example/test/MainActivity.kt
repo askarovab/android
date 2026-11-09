@@ -70,7 +70,7 @@ class MainActivity : ComponentActivity() {
                     ) {
                         word.forEachIndexed { cellIndex, char ->
                             val cellColor = when {
-                                !isEvenRow -> MaterialTheme.colorScheme.primary
+                                !isEvenRow -> Color.Green
                                 cellIndex in yellowCells[rowIndex] -> Color.Yellow
                                 else -> Color.LightGray
                             }
